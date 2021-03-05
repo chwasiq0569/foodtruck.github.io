@@ -29,11 +29,11 @@
                     <span></span>
                 </div>
                 <div id="mobileNav" class="mobileNav">
-                    <a class="mobClicks" href="#home">HOME</a>
-                    <a class="mobClicks" href="#about">ABOUT</a>
-                    <a class="mobClicks" href="#gallery">GALLERY</a>
-                    <a class="mobClicks" href="#shop">SHOP</a>
-                    <a class="mobClicks" href="#contact">CONTACT</a>
+                    <a class="mobClicks" id="click1" href="#home">HOME</a>
+                    <a class="mobClicks" id="click2" href="#about">ABOUT</a>
+                    <a class="mobClicks" id="click3" href="#gallery">GALLERY</a>
+                    <a class="mobClicks" id="click4" href="#shop">SHOP</a>
+                    <a class="mobClicks" id="click5" href="#contact">CONTACT</a>
                 </div>
             </div>
             <div class="hero__Section">
@@ -341,19 +341,31 @@
 	                                });
         });
 
-        Array.from(document.querySelectorAll("mobClicks")).forEach(e => e.addEventListener("toggle", function(){
-            console.log("clicked");
-            document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+        // Array.from(document.querySelectorAll(".mobClicks")).forEach(e => e.addEventListener("toggle", function(){
+        //     console.log("clicked");
+        //          document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+        //         document.getElementById("nav-icon3").classList.remove("open");
+        // }))
+            document.getElementById("click1").addEventListener("click", function(){
+                document.getElementById("mobileNav").classList.remove("mobileNavOpen");
                 document.getElementById("nav-icon3").classList.remove("open");
-        }))
-            // document.getElementById("click1").addEventListener("click", function(){
-            //     document.getElementById("mobileNav").classList.remove("mobileNavOpen");
-            //     document.getElementById("nav-icon3").classList.remove("open");
-            // })
-            // document.getElementById("click2").addEventListener("click", function(){
-            //     document.getElementById("mobileNav").classList.remove("mobileNavOpen");
-            //     document.getElementById("nav-icon3").classList.remove("open");
-            // })
+            })
+            document.getElementById("click2").addEventListener("click", function(){
+                document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+                document.getElementById("nav-icon3").classList.remove("open");
+            })
+            document.getElementById("click3").addEventListener("click", function(){
+                document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+                document.getElementById("nav-icon3").classList.remove("open");
+            })
+            document.getElementById("click4").addEventListener("click", function(){
+                document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+                document.getElementById("nav-icon3").classList.remove("open");
+            })
+            document.getElementById("click5").addEventListener("click", function(){
+                document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+                document.getElementById("nav-icon3").classList.remove("open");
+            })
             
     </script>
 </body>
